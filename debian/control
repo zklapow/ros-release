@@ -1,0 +1,31 @@
+Source: ros-fuerte-ros
+Section: misc
+Priority: extra
+Maintainer: Ken Conley <kwc@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), libboost-all-dev,libgtest-dev,python-rospkg,ros-fuerte-rospack,libbz2-dev,python-dev,python-nose
+Homepage: http://www.ros.org/wiki/ROS
+Standards-Version: 3.9.2
+
+Package: ros-fuerte-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev,libgtest-dev,python-rospkg,ros-fuerte-rospack,libbz2-dev,python-dev,python-nose
+Description: ROS packaging system
+ .
+ This stack contains the packages:
+ * rosmake: rosmake is a ros dependency aware build tool which can be used to build all dependencies in the correct order.
+ * rosboost_cfg: Contains scripts used by the rosboost-cfg tool for determining cflags/lflags/etc. of boost on your system
+ * foo: foo
+ * bar: bar
+ * rosbash: Assorted shell commands for using ros with bash.
+ * roslib: Base dependencies and support libraries for ROS. roslib contains many of the common data structures and tools that are shared across ROS client library implementations.
+ * roscreate: roscreate contains tools that assist in the creation of ROS filesystem resources. There are currently two tools that it provides: roscreate-pkg and roscreate-stack. roscreate-pkg creates a new package directory, including the appropriate build and manifest files. roscreate-stack computes a stack.xml file from a list of packages in a directory.
+ * mk: A collection of .mk include files for building ROS architectural elements. Most package authors should use cmake .mk, which calls CMake for the build of the package. The other files in this package are intended for use in exotic situations that mostly arise when importing 3rdparty code.
+ * rosbuild: rosbuild contains scripts for managing the CMake-based build system for ROS.
+ * foo_pkg_2: foo_pkg_2
+ * rosclean: rosclean: cleanup filesystem resources (e.g. log files).
+ * rosunit: Unit-testing package for ROS. This is a lower-level library for rostest and handles unit tests, whereas rostest handles integration tests.
+ * depends_roslib: depends_roslib
+ * depends_stack1: depends_stack1
+ * roslang: roslang is a common package that all ROS client libraries depend on. This is mainly used to find client libraries (via 'rospack depends-on1 roslang').
+ * foo_pkg: foo_pkg
+
