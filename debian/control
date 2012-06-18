@@ -2,12 +2,12 @@ Source: ros-fuerte-ros
 Section: misc
 Priority: extra
 Maintainer: Tully Foote <tfoote@willowgarage.com>
-Build-Depends: debhelper (>= 7.0.50~), libboost1.40-all-dev,libgtest-dev,python-rospkg,ros-fuerte-rospack,libbz2-dev,ros-fuerte-catkin,pkg-config,python-dev,python-nose
+Build-Depends: debhelper (>= 7.0.50~), libboost-all-dev,libgtest-dev,python-rospkg,ros-fuerte-rospack,libbz2-dev,ros-fuerte-catkin,pkg-config,python-dev,python-nose
 Homepage: http://www.ros.org/wiki/ROS
 Standards-Version: 3.9.2
 
 Package: ros-fuerte-ros
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libboost1.40-all-dev,libgtest-dev,python-rospkg,ros-fuerte-rospack,libbz2-dev,ros-fuerte-catkin,python-dev,python-nose
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev,libgtest-dev,python-rospkg,ros-fuerte-rospack,libbz2-dev,ros-fuerte-catkin,python-dev,python-nose
 Description: ROS packaging system
 
